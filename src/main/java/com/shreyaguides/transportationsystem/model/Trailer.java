@@ -18,16 +18,63 @@ public class Trailer {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Integer tid;
 	
-	@Column(name = "origin")
 	private Integer origin;
 	
-	@Column(name = "destination")
 	private Integer destination;
 
-	@Column(name = "trailerNumber")
 	private Integer trailerNumber;
 	
-	@Column(name = "totalPackages")
 	private Integer totalPackages;
-	
+
+	public Trailer() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Integer getTid() {
+		return tid;
+	}
+
+	public void setTid(Integer tid) {
+		this.tid = tid;
+	}
+
+	public Integer getOrigin() {
+		return origin;
+	}
+
+	public void setOrigin(Integer origin) {
+		this.origin = origin;
+	}
+
+	public Integer getDestination() {
+		return destination;
+	}
+
+	public void setDestination(Integer destination) {
+		this.destination = destination;
+	}
+
+	public Integer getTrailerNumber() {
+		return trailerNumber;
+	}
+
+	public void setTrailerNumber(Integer trailerNumber) {
+		this.trailerNumber = trailerNumber;
+	}
+
+	public Integer getTotalPackages() {
+		return totalPackages;
+	}
+
+	public void setTotalPackages(Integer totalPackages) {
+		this.totalPackages = totalPackages;
+	}
+
+	@Override
+	public String toString() {
+		return "Trailer [tid=" + tid + ", origin=" + origin + ", destination=" + destination + ", trailerNumber="
+				+ trailerNumber + ", totalPackages=" + totalPackages + "]";
+	}
+
 }
